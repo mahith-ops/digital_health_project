@@ -4,6 +4,7 @@ import 'package:hello_flutter/components/button/button.dart';
 import 'package:hello_flutter/components/card/card.dart' as ds;
 import 'package:hello_flutter/components/search-input/search_input.dart';
 import 'package:hello_flutter/components/chip/chip.dart' as chip_component;
+import 'package:hello_flutter/screens/medical_history/medical_history_doctor.dart';
 
 class MedicalHistory extends StatefulWidget {
   const MedicalHistory({super.key});
@@ -175,7 +176,17 @@ class _MedicalHistoryState extends State<MedicalHistory> {
       elevation: 0,
       color: Colors.white,
       padding: const EdgeInsets.all(20),
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => DoctorDetailsPage(
+              doctorName: doctorName,
+              specialization: specialty,
+            ),
+          ),
+        );
+      },
       child: Row(
         children: [
           Avatar(
