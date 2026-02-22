@@ -220,3 +220,6 @@ class _AddMedicationRecordScreenWrapperState
     );
   }
 }
+
+//Inventory -> in the home page is not connected 
+//
