@@ -31,12 +31,12 @@ class Modal extends StatelessWidget {
       context: context,
       barrierDismissible: isDismissible,
       builder: (context) => Modal(
-        child: child,
         title: title,
         actions: actions,
         isDismissible: isDismissible,
         width: width,
         height: height,
+        child: child,
       ),
     );
   }

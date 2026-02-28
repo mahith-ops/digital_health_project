@@ -36,13 +36,19 @@ class _AddMedicationRecordScreenWithNavigationState
   final List<String> _subTypes = ['Medication', 'Appointment'];
 
   // Form field states
+  // ignore: unused_field
   String _medicationName = '';
+  // ignore: unused_field
   DateTime? _fromDate;
+  // ignore: unused_field
   DateTime? _toDate;
   String _selectedTiming = 'Before Breakfast';
   String _selectedFrequency = 'Daily';
+  // ignore: unused_field
   String _medicineType = '';
+  // ignore: unused_field
   String _dosage = '';
+  // ignore: unused_field
   String _notes = '';
 
   // Timing options

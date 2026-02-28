@@ -31,9 +31,13 @@ class _MedicineStockPageWithNavigationState
   ];
 
   // Form field states
+  // ignore: unused_field
   String _medicineName = '';
+  // ignore: unused_field
   String _medicineType = '';
+  // ignore: unused_field
   String _dosageDescription = '';
+  // ignore: unused_field
   String _quantity = '';
 
   void _handleSaveRecord() {

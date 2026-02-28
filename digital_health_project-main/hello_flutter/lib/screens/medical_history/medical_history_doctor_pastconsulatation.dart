@@ -55,7 +55,7 @@ class PastConsultationsPage extends StatelessWidget {
                     notes: consultation['notes'],
                   ),
                 );
-              }).toList(),
+              }),
               const SizedBox(height: 80),
             ],
           ),

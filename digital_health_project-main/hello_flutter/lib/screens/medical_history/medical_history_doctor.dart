@@ -92,7 +92,7 @@ class _DoctorDetailsPageState extends State<DoctorDetailsPage> {
           child: const Text(
             'Edit',
             style: TextStyle(
-              color: const Color(0xFF0097A7),
+              color: Color(0xFF0097A7),
               fontSize: 14,
               fontWeight: FontWeight.w600,
             ),
@@ -265,7 +265,7 @@ class _DoctorDetailsPageState extends State<DoctorDetailsPage> {
                       _remindMe = value;
                     });
                   },
-                  activeColor: const Color(0xFF0097A7),
+                  activeThumbColor: const Color(0xFF0097A7),
                 ),
               ],
             ),

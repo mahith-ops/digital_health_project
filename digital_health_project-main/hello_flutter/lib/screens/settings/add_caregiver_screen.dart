@@ -315,7 +315,7 @@ class _AddFamilyMemberScreenState extends State<AddFamilyMemberScreen> {
         Switch(
           value: value,
           onChanged: onChanged,
-          activeColor: const Color(0xFF10B981),
+          activeThumbColor: const Color(0xFF10B981),
         ),
       ],
     );

@@ -17,7 +17,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       backgroundColor: const Color(0xFFF8FAFC),
       appBar: AppBar(
         backgroundColor: const Color(0xFFF8FAFC),
-        elevation: 0,
+        
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           color: const Color(0xFF0F172A),
@@ -59,7 +59,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   Widget _buildProfileCard(BuildContext context) {
     return Card(
-      elevation: 0,
+      
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
       ),
@@ -160,7 +160,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
         ),
         Card(
-          elevation: 0,
+          
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
@@ -229,7 +229,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
         ),
         Card(
-          elevation: 0,
+          
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
@@ -263,7 +263,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   _darkModeEnabled = value;
                 });
               },
-              activeColor: const Color(0xFF10B981),
+              activeThumbColor: const Color(0xFF10B981),
             ),
           ),
         ),
@@ -288,7 +288,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
         ),
         Card(
-          elevation: 0,
+          
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),

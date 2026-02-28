@@ -62,7 +62,7 @@ class _RemindersScreenState extends State<RemindersScreen> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),
-            elevation: 0,
+            
           ),
           child: const Row(
             mainAxisSize: MainAxisSize.min,
@@ -85,7 +85,7 @@ class _RemindersScreenState extends State<RemindersScreen> {
 
   Widget _buildDailyAdherenceCard(BuildContext context) {
     return Card(
-      elevation: 0,
+      
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
       ),
@@ -152,7 +152,6 @@ class _RemindersScreenState extends State<RemindersScreen> {
     final monthLabel = '$currentMonth $currentYear';
 
     // Generate dates for the current month
-    final firstDay = DateTime(_selectedDate.year, _selectedDate.month, 1);
     final lastDay = DateTime(_selectedDate.year, _selectedDate.month + 1, 0);
     final daysInMonth = lastDay.day;
 
@@ -434,7 +433,7 @@ class _RemindersScreenState extends State<RemindersScreen> {
     }
 
     return Card(
-      elevation: 0,
+      
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
       ),
@@ -535,7 +534,7 @@ class _RemindersScreenState extends State<RemindersScreen> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        elevation: 0,
+                        
                       ),
                       child: Text(
                         medication.status == MedicationStatus.missed

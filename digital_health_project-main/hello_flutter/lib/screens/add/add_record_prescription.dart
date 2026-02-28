@@ -5,7 +5,6 @@ import 'package:hello_flutter/components/dropdown/dropdown.dart';
 import 'package:hello_flutter/components/text-area/text_area.dart';
 import 'package:hello_flutter/components/switch/switch.dart' as custom_switch;
 import 'package:hello_flutter/components/file-upload/file_upload.dart';
-import 'package:hello_flutter/screens/add/add_record_reminder_medication.dart';
 
 /// Add Record Screen
 /// Allows users to manually add medical records with custom components.

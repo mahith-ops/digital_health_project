@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Health App',
       theme: ThemeData(
+        // fontFamily: 'Inter',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         scaffoldBackgroundColor: const Color(0xFFF8FAFC),
       ),

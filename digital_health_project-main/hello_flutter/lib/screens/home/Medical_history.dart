@@ -173,7 +173,7 @@ class _MedicalHistoryState extends State<MedicalHistory> {
   ) {
     return ds.Card(
       borderRadius: BorderRadius.circular(20),
-      elevation: 0,
+
       color: Colors.white,
       padding: const EdgeInsets.all(20),
       onTap: () {

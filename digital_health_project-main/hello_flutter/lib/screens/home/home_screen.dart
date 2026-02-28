@@ -48,28 +48,30 @@ class HomePage extends StatelessWidget {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.blue.withOpacity(0.1),
-                    blurRadius: 8,
-                    offset: const Offset(0, 2),
+                    color: Colors.black.withOpacity(0.05),
+                    blurRadius: 20,
+                    offset: const Offset(0, 8),
                   ),
                 ],
               ),
               child: const Avatar(
                 initials: 'S',
-                size: 52,
+                size: 56,
                 backgroundColor: Color(0xFF3B82F6),
               ),
             ),
             const Spacer(),
             Container(
+              width: 48,
+              height: 48,
               decoration: BoxDecoration(
                 color: Colors.white,
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.05),
-                    blurRadius: 8,
-                    offset: const Offset(0, 2),
+                    color: Colors.black.withOpacity(0.04),
+                    blurRadius: 20,
+                    offset: const Offset(0, 8),
                   ),
                 ],
               ),
@@ -88,7 +90,7 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 24),
         _buildHeaderGreeting(context),
       ],
     );
@@ -128,20 +130,21 @@ class HomePage extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          '$greeting, Saah',
+          '$greeting,\nSarah',
           style: const TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.w700,
+            fontSize: 28,
+            fontWeight: FontWeight.w800,
             color: Color(0xFF0F172A),
-            letterSpacing: -0.5,
+            letterSpacing: -0.2,
+            height: 1.1,
           ),
         ),
         const SizedBox(height: 6),
         Text(
           dateText,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 15,
-            color: Colors.grey[600],
+            color: Color(0xFF64748B),
             fontWeight: FontWeight.w400,
           ),
         ),
@@ -223,7 +226,6 @@ class HomePage extends StatelessWidget {
     
     return ds.Card(
       borderRadius: BorderRadius.circular(20),
-      elevation: 0,
       color: Colors.white,
       padding: const EdgeInsets.all(20),
       child: Row(
@@ -422,7 +424,6 @@ class HomePage extends StatelessWidget {
   ) {
     return ds.Card(
       borderRadius: BorderRadius.circular(20),
-      elevation: 0,
       color: Colors.white,
       padding: const EdgeInsets.all(20),
       onTap: null,
@@ -520,7 +521,6 @@ class HomePage extends StatelessWidget {
         const SizedBox(height: 16),
         ds.Card(
           borderRadius: BorderRadius.circular(20),
-          elevation: 0,
           color: Colors.white,
           padding: const EdgeInsets.all(20),
           onTap: () {},
@@ -625,7 +625,6 @@ class HomePage extends StatelessWidget {
   Widget _buildFamilyCare(BuildContext context) {
     return ds.Card(
       borderRadius: BorderRadius.circular(20),
-      elevation: 0,
       color: const Color(0xFFF0F9FF),
       padding: const EdgeInsets.all(24),
       onTap: () {},
@@ -689,7 +688,6 @@ class HomePage extends StatelessWidget {
   Widget _buildSmartAlerts(BuildContext context) {
     return ds.Card(
       borderRadius: BorderRadius.circular(20),
-      elevation: 0,
       color: const Color(0xFFFFFBEB),
       padding: const EdgeInsets.all(20),
       onTap: () {},
