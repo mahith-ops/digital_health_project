@@ -4,6 +4,7 @@ class TextField extends material.StatelessWidget {
   final String? value;
   final material.ValueChanged<String>? onChanged;
   final material.ValueChanged<String>? onSubmitted;
+  final String? Function(String?)? validator;
   final String? label;
   final String? hint;
   final String? errorText;
@@ -19,6 +20,7 @@ class TextField extends material.StatelessWidget {
     this.value,
     this.onChanged,
     this.onSubmitted,
+    this.validator,
     this.label,
     this.hint,
     this.errorText,
@@ -42,14 +44,15 @@ class TextField extends material.StatelessWidget {
           ),
           const material.SizedBox(height: 8),
         ],
-        material.TextField(
-          controller: value != null ? material.TextEditingController(text: value) : null,
+        material.TextFormField(
+          initialValue: value,
           onChanged: onChanged,
-          onSubmitted: onSubmitted,
+          onFieldSubmitted: onSubmitted,
           obscureText: obscureText,
           keyboardType: keyboardType,
           enabled: enabled,
           maxLength: maxLength,
+          validator: validator,
           decoration: material.InputDecoration(
             hintText: hint,
             prefixIcon: prefixIcon,

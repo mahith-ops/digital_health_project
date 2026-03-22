@@ -7,6 +7,7 @@ import 'package:hello_flutter/components/bottom-navigation/bottom_navigation.dar
 import 'package:hello_flutter/screens/add/add_record_prescription.dart';
 import 'package:hello_flutter/screens/add/add_record_medication.dart';
 import 'package:hello_flutter/screens/add/add_record_reminder_medication.dart';
+import 'package:hello_flutter/screens/authentication/signup_screen.dart';
 
 
 void main() {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         scaffoldBackgroundColor: const Color(0xFFF8FAFC),
       ),
-      home: const MainNavigation(),
+      home: const SignupScreen(),
     );
   }
 }
